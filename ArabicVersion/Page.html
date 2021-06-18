@@ -1,0 +1,168 @@
+<html lang="fr"><script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title> Template (fr) de page html du projet</title>
+    <style>
+	/* EXEMPLES de style basique de mise en page et décoration */
+		body > header {
+			background: #eee; 
+			width: 80%
+			border: thin grey solid;
+			padding: 1em;
+			font-size: 180%;
+			font-family: arial black;
+			text-align: center;
+		}
+		nav {
+			margin-top: 3px;
+			margin-bottom: 3px;
+			padding: 1px; 
+			text-align: center;
+			background-color: #ddf;
+		}
+		nav li {
+			display:inline;
+			padding: 1px;
+		}
+		.main {
+			border: solid grey 1px;
+		}
+		.contenu {
+			width: 74%;
+			padding: 2px;
+
+		}
+		aside { 
+			float:right;
+			width:24%; 
+			border: #005A9C solid 1px;
+			margin-right:3px;
+			margin-top: 2em;
+			padding: 2px;
+      background-color: #efffea;
+		}
+		aside  li {  /* style des liens aside*/
+			padding : 2px;
+		 }
+     aside h2 {
+       background-color : #eef;
+       color : black;
+       padding : 3px;
+     }  
+		section {
+			padding : 2px;
+			margin-left: 2px;
+		}
+		article {}
+		footer {
+			margin-top: 1em;
+			font-size: 85%;
+		}
+		p {}
+		h2 {
+			color: #005A9C;
+		}
+		h3 {}
+
+
+
+	</style>
+  </head>
+  <body>
+    <p style="text-align:right;"> <a title="عربية" href="index.ar.html">🇲🇦</a>
+    </p>
+    <header> Bannière générale d'accueil ... </header>
+    <nav>
+      <ul>
+        <li><a href="https://www.wikipedia.org">lien1</a></li>
+        <li><a href="https://www.emi.ac.ma">lien2</a></li>
+        <li>... <a href="https://www.w3.org">lien-n</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <aside>
+        <h2> Liens utiles </h2>
+        <p style="">Signez <a href="">mon livre d'Or</a>.
+          Merci pour votre visite ...</p>
+        <p>Mes <a href="">musiques préférées</a>. Il y a
+          du tout, musique du monde, du Jazz, du Rock, du Classique...</p>
+        <p>Apprendre <a href="https://www.edx.org/school/w3cx">les
+            technologies du Web</a> (libre), HTML, CSS, JS </p>
+        <p>etc ...<br>
+        </p>
+      </aside>
+      <section class="contenu">
+        <header>
+          <h2>Titre éventuel de section</h2>
+        </header>
+        <article>
+          <header>
+            <h3>Titre éventuel de article</h3>
+          </header>
+          <p> Contenu réel : texte, images, vidéos etc... </p>
+          <article>
+            <header>
+              <h3>Titre éventuel de article</h3>
+            </header>
+            <p> Contenu réel : texte, images, vidéos etc... </p>
+          </article>
+        </article>
+      </section>
+      <section class="contenu">
+        <header>
+          <h2>Titre éventuel de section</h2>
+        </header>
+        <article>
+          <header>
+            <h3>Titre éventuel de article</h3>
+          </header>
+          <p> Contenu réel : texte, images, vidéos etc... </p>
+        </article>
+      </section>
+      <!-- <section> autre section etc...</section> --> </div>
+    <footer> Bas de page
+      <address>mon adresse ou mon email</address>
+      <p>contact etc.</p>
+    </footer>
+  
+
+</body></html>
