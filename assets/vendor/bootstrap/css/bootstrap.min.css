@@ -390,36 +390,6 @@ pre code {
   overflow-y: scroll;
 }
 
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1140px;
-  }
-}
 
 .no-gutters {
   margin-right: 0;
@@ -6842,10 +6812,7 @@ button.bg-dark:hover {
 .px-0 {
   padding-right: 0 !important;
 }
-.pb-0,
-.py-0 {
-  padding-bottom: 0 !important;
-}
+
 .pl-0,
 .px-0 {
   padding-left: 0 !important;
