@@ -12,13 +12,17 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/style1.css" />
 
-
+    <style>
+        a:hover {
+            background-color: rgb(243, 237, 201);
+        }
+    </style>
 </head>
 
 <body style="margin-left: 7cm;">
 
     <nav class="  navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#"><img class="RedaIcon" src="./img/redaIcon.gif" /></a>
+        <a class="navbar-brand" href="#"><img class="RedaIcon" src="./img/redaIcon.gif" alt="" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,46 +46,23 @@
                     <a class="nav-link" href="./Certificates.html">Certificates</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Certificates.html">🇫🇷 francais</a>
+                    <a class="nav-link" href="./ArabicVersion/index.html">🇸🇦 العربية</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Certificates.html">🇸🇦 العربية</a>
+                    <a class="nav-link" href="./FrenchVersion/img/">🇫🇷 francais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">🇺🇸 english</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="page-wrapper chiller-theme toggled">
         <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
             <i class="fas fa-bars"></i>
         </a>
-        <nav id="sidebar" class="sidebar-wrapper" style="margin-left: none;">
+        <nav id="sidebar" class="sidebar-wrapper" style="margin-left: 0;">
             <div class="sidebar-content">
                 <div class="sidebar-header">
                     <div class="user-pic">
@@ -128,12 +109,7 @@
                         <li class="header-menu">
                             <span>Pages</span>
                         </li>
-                        <style>
-                            a:hover {
-                                background-color: rgb(243, 237, 201);
-                                border: 5, 5, red;
-                            }
-                        </style>
+
 
 
                         <li class="sidebar-dropdown">
@@ -165,9 +141,9 @@
 
                     </ul>
                 </div>
-                <!-- sidebar-menu  -->
+
             </div>
-            <!-- sidebar-content  -->
+
 
         </nav>
 
@@ -179,7 +155,7 @@
         <div class=" container Intro">
             <div class="row">
                 <div class="col-lg-7 ">
-                    <img src="./img/Developer-on-laptop.gif" alt="Image" width="450px" />
+                    <img src="./img/Developer-on-laptop.gif" alt="Image" width="450" />
                 </div>
                 <div class="col-lg-5">
                     <h1>
@@ -192,28 +168,8 @@
     </div>
 
 
-    <!-- Font Awsome icons cdn -->
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
     <footer style="margin-top: 5cm;">
-        <!-- <div class="sm-handle">
-            <a href="https://instagram.com/" class="sm-button">
-                <i class="fab fa-instagram"> </i>
-            </a>
-            <a href="https://www.linkedin.com/in/" class="sm-button">
-                <i class="fab fa-linkedin"> </i>
-            </a>
-            <a href="https://facebook.com/" class="sm-button">
-                <i class="fab fa-facebook-f"> </i>
-            </a>
-            <a href="https://twitter.com/" class="sm-button">
-                <i class="fab fa-twitter"> </i>
-            </a>
-            <a href="https://github.com/" class="sm-button">
-                <i class="fab fa-github"> </i>
-            </a>
-        </div> -->
-        <!-- Social media icons line Start -->
+
         <div class="footer-links">
             <div class="menu">
                 <h4 class="menu-title">Menu</h4>
@@ -231,7 +187,7 @@
             </div>
         </div>
         <!-- copyright area -->
-        <p class="copyright">&copy Copyright 2021 | ❤️ Reda EL OUAHABI
+        <p class="copyright">&copy; Copyright 2021 | ❤️ Reda EL OUAHABI
         </p>
     </footer>
     <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"> </i></a>
@@ -239,58 +195,21 @@
 
 
 
-    <!-- Only for NavBar Responsive -->
+    <!-- Only for NavBar Responsive + Spinner in JS -->
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
+    <script src="js/Javascript_spinner_Responsive.js"></script>
+    <script src="js/Js4Spinner_Responsive2.js"></script>
+    <script src="js/Js4Resp_Spinner3.js"></script>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 
 
-    <!-- sidebarJsDoesNothing -->
-    <!-- <script>
-
-        $(".sidebar-dropdown > a").click(function () {
-            $(".sidebar-submenu").slideUp(200);
-            if (
-                $(this)
-                    .parent()
-                    .hasClass("active")
-            ) {
-                $(".sidebar-dropdown").removeClass("active");
-                $(this)
-                    .parent()
-                    .removeClass("active");
-            } else {
-                $(".sidebar-dropdown").removeClass("active");
-                $(this)
-                    .next(".sidebar-submenu")
-                    .slideDown(200);
-                $(this)
-                    .parent()
-                    .addClass("active");
-            }
-        });
-        $("#close-sidebar").click(function () {
-            $(".page-wrapper").removeClass("toggled");
-        });
-        $("#show-sidebar").click(function () {
-            $(".page-wrapper").addClass("toggled");
-        });
-    </script> -->
 </body>
 
 </html>
