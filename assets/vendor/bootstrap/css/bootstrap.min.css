@@ -224,12 +224,13 @@ template {
 }
 .h1,
 .h2,
-
+.h3,
 .h4,
 .h5,
 .h6,
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
@@ -245,7 +246,10 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-
+.h3,
+h3 {
+  font-size: 1.75rem;
+}
 .h4,
 h4 {
   font-size: 1.5rem;
@@ -6808,7 +6812,10 @@ button.bg-dark:hover {
 .px-0 {
   padding-right: 0 !important;
 }
-
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
 .pl-0,
 .px-0 {
   padding-left: 0 !important;
@@ -8630,12 +8637,13 @@ a.text-dark:hover {
     page-break-inside: avoid;
   }
   h2,
- 
+  h3,
   p {
     orphans: 3;
     widows: 3;
   }
-  h2 {
+  h2,
+  h3 {
     page-break-after: avoid;
   }
   @page {
